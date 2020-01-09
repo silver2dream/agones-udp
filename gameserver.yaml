@@ -19,10 +19,10 @@ metadata:
 spec:
   ports:
   - name: default
-    portPolicy: Static
+    portPolicy: Dynamic
     containerPort: 7654
-    hostPort: 7777
-    protocol: UDP
+    # hostPort: 7777
+    protocol: TCP
   health:
     # Disable health checking. defaults to false, but can be set to true
     disabled: false
