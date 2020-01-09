@@ -15,7 +15,7 @@
 apiVersion: "agones.dev/v1"
 kind: GameServer
 metadata:
-  generateName: "simple-udp-"
+  generateName: "udream-udp-"
 spec:
   ports:
   - name: default
