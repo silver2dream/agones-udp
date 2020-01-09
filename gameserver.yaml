@@ -21,7 +21,7 @@ spec:
   - name: default
     portPolicy: Static
     containerPort: 7654
-    host: 7777
+    hostPort: 7777
     protocol: UDP
   health:
     # Disable health checking. defaults to false, but can be set to true
