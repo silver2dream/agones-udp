@@ -18,7 +18,7 @@ metadata:
   generateName: "udream-udp-"
 spec:
   ports:
-  - name: agones-system
+  - name: default
     portPolicy: Dynamic
     containerPort: 7654
     # hostPort: 7777
@@ -50,7 +50,7 @@ spec:
   template:
     spec:
       containers:
-      - name: agones-system
+      - name: default
         image: gcr.io/hayashi-k8s/agones-udp-server:modified
         resources:
           requests:
